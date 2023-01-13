@@ -18,15 +18,26 @@
         <!-- NavBar -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
+            <div class="fixed-top p-2">
+                <span class="badge bg-dark">ES</span>
+                <label class="switch">
+                    <input type="checkbox" id="langSelector">
+                    <div class="slider"></div>
+                </label>
+                <span class="badge bg-dark">EN</span>
+            </div>
                 <a class="navbar-brand slide-right" href="#page-top">José Sánchez DEV</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link slide-right" href="#about">About me</a></li>
-                        <li class="nav-item"><a class="nav-link slide-right" href="#projects">Proyects</a></li>
-                        <li class="nav-item"><a class="nav-link slide-right" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link slide-right lang lang-en" href="#about">About me</a></li>
+                        <li class="nav-item"><a class="nav-link slide-right lang lang-es" href="#about">Sobre mi</a></li>
+                        <li class="nav-item"><a class="nav-link slide-right lang lang-en" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link slide-right lang lang-es" href="#projects">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link slide-right lang lang-en" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link slide-right lang lang-es" href="#contact">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,14 +50,23 @@
         <section class="about-section text-center" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 lang lang-en ">
                         <h2 class="text-white mb-4">About me</h2>
                         <p class="text-white-50">
                             Hi, my name is José Francisco Sánchez Aldana
                             I am junior programmer in Málaga (Spain).I started programming at the end of 2021.
                             Now i am studying the C.F.G.S Desarrollo de Aplicaciones Multiplataforma.
                         </p>
-                        <a class="btn btn-primary justify-content-center  mb-4 vibrate" href="./assets/Curriculum.pdf" download="Curriculum.pdf">Download CV</a>
+                        <a class="btn btn-primary justify-content-center mb-4 vibrate" href="./assets/Curriculum.pdf" download="Curriculum.pdf">Download CV</a>
+                    </div>
+                    <div class="col-lg-8 lang lang-es ">
+                        <h2 class="text-white mb-4">Sobre mi</h2>
+                        <p class="text-white-50">
+                            Hola, mi nombre es José Francisco Sánchez Aldana
+                            Soy programador junior en Málaga (España). Empece a programar a finales de 2021.
+                            Actualmente estoy estudiando el C.F.G.S Desarrollo de Aplicaciones Multiplataforma.
+                        </p>
+                        <a class="btn btn-primary justify-content-center mb-4 vibrate" href="./assets/Curriculum.pdf" download="Curriculum.pdf">Descargar CV</a>
                     </div>
                 </div>
             </div>
@@ -55,16 +75,23 @@
         <!-- Proyects -->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-black mb-4">Projects</h2>
-
+                <h2 class="text-black mb-4 lang lang-en">Projects</h2>
+                <h2 class="text-black mb-4 lang lang-es">Proyectos</h2>
                 <!-- Project 1 -->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/WebMulti-Minigames.png" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
+                    <div class="col-xl-4 col-lg-5  lang lang-en">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Multi-Minigames</h4>
                             <p class="text-black-50 mb-0">Web with diferent types of minigames<br>Created with javascript, jquery, bootstrap, CSS and HTML</p><BR>
                             <a class="btn btn-primary vibrate" href="https://multi-minigames.netlify.app/">VISIT</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5  lang lang-es">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Multi-Minigames</h4>
+                            <p class="text-black-50 mb-0">Web con diferentes minijuegos<br>Creado con javascript, jquery, bootstrap, CSS y HTML</p><BR>
+                            <a class="btn btn-primary vibrate" href="https://multi-minigames.netlify.app/">VISITAR</a>
                         </div>
                     </div>
                 </div>
@@ -101,8 +128,9 @@
         </footer>
 
         <!--JS-->
+        <script src="js/navbar.js"></script>
+        <script src="js/languaje.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
 
     </body>
 </html>
