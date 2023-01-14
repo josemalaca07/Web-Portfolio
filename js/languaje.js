@@ -1,10 +1,14 @@
 var checkbox = document.querySelector('input[type="checkbox"]');
+
+var myModal = document.getElementById('staticBackdrop');
+
+checkbox.addEventListener('change', ischecked);
+
 document.addEventListener('DOMContentLoaded', function () {
   changeLanguage("en")
   checkbox.checked=true;
+  modal.show()
 });
-
-checkbox.addEventListener('change', ischecked);
 
 function ischecked(){
   if (checkbox.checked) {
@@ -33,4 +37,4 @@ selector.addEventListener('change', function (evt) {
     changeLanguage(this.value);
 });
 
-
+var modal = bootstrap.Modal.getOrCreateInstance(myModal)
